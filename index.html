@@ -11,7 +11,7 @@
 
   <title>Build nest solutions</title>
 
-  <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css"> -->
+  
    <link rel="stylesheet" href="./css/bootstrap.css">
   
   <link rel="stylesheet" href="./css/maicons.css">
@@ -24,9 +24,17 @@
 
   <link rel="stylesheet" href="./css/theme.css">
   <style>
-    .tick-icon {
-  color: #007bff !important; /* Bootstrap's primary blue color */
+    .subheading-box {
+  background-color: #2F89FC;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
   font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: inline-block;
 }
 
   </style>
@@ -48,31 +56,32 @@
               <span class="mai-call fg-primary"></span> <a href="tel:+1 229 509 9316">+1 229 509 9316</a>
             </div>
           </div>
-          <div class="col-md-4 text-right d-none d-md-block">
-            <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-youtube"></span></a>
-              <a href="#"><span class="mai-logo-linkedin"></span></a>
-            </div>
-          </div>
+          
         </div>
       </div> <!-- .container -->
     </div> <!-- .top-bar -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <!-- <a href="index.html" class="navbar-brand">Reve<span class="text-primary">Tive.</span></a> -->
-        <a href="index.html">
-          <img src="./img/Picsart_24-11-16_21-16-21-394.png" width="120px" height="120px">
-        </a>
-
+      <div class="container d-flex align-items-center">
+        <!-- Left: Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/Picsart_24-11-16_21-16-21-394.png" width="170px" height="170px" alt="Logo">
+          </a>
+        </div>
+    
+        <!-- Center: Company Name -->
+        <div class="company-name-container">
+          <span class="navbar-brand company-name">Build Nest Solutions</span>
+        </div>
+    
+        <!-- Right: Navigation Links -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a href="index.html" class="nav-link">Home</a>
             </li>
@@ -82,19 +91,18 @@
             <li class="nav-item">
               <a href="./html/services.html" class="nav-link">Services</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a href="./html/portfolio.html" class="nav-link">Projects</a>
             </li>
-           <!-- <li class="nav-item">
-              <a href="blog.html" class="nav-link">News</a>
-            </li> -->
             <li class="nav-item">
               <a href="./html/contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
-      </div> <!-- .container -->
-    </nav> <!-- .navbar -->
+      </div>
+    </nav>
+    
+    
 
     <div class="page-banner home-banner mb-5">
       <div class="slider-wrapper">
@@ -103,15 +111,15 @@
             <img src="./img/architect_img_1.jpg" alt="">
             <div class="img-caption">
               <!-- <div class="subhead">We're design studio believe in ideas</div> -->
-              <!-- <h1 class="mb-4">Unlock more bidding opportunities with our professional Quantity Take Off and estimating services</h1>
-              <a href="#services" class="btn btn-outline-light">Get Started</a> -->
+               <h1 class="mb-4">Unlock more bidding opportunities with our professional quantity take off and estimating services</h1>
+              <!--<a href="#services" class="btn btn-outline-light">Get Started</a> -->
             </div>
           </div>
           <div class="hero-carousel-item">
             <img src="./img/architect_img_2.jpeg" alt="">
             <div class="img-caption">
-              <!-- <h1 class="mb-4">Unlock more bidding opportunities with our professional Quantity Take Off and estimating services</h1>
-              <a href="#services" class="btn btn-outline-light">Get Started</a> -->
+              <h1 class="mb-4">Unlock more bidding opportunities with our professional quantity take off and estimating services</h1>
+              <!-- <a href="#services" class="btn btn-outline-light">Get Started</a> -->
               <!-- <a href="#services" class="btn btn-primary">See Pricing</a> -->
             </div>
           </div>
@@ -119,8 +127,8 @@
             <img src="./img/architect_img_3.jpg" alt="">
             <div class="img-caption">
               <!-- <div class="subhead">Easy way to build perfect website</div> -->
-              <!-- <h1 class="mb-4">Unlock more bidding opportunities with our professional Quantity Take Off and estimating services</h1>
-              <a href="#services" class="btn btn-primary">Read More</a> -->
+              <h1 class="mb-4">Unlock more bidding opportunities with our professional quantity take off and estimating services</h1>
+              <!-- <a href="#services" class="btn btn-primary">Read More</a> -->
             </div>
           </div>
         </div>
@@ -132,27 +140,22 @@
     <div class="page-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 py-3">
+          <div class="col-lg-12 py-3 text-center">
             <div class="subhead">About Us</div>
             <h2 class="title-section">We are <span class="fg-primary">Professional Teams</span> to Building Your Vision and Ensuring Your Success.</h2>
 
-            <p>Welcome to Build Nest Solutions LLC, your trusted partner in construction estimating and takeoff services across the USA, Canada, and Australia. We specialize in providing accurate estimates quickly, helping contractors, subcontractors, and suppliers increase their chances of winning profitable projects.
+            <p>Welcome to Build Nest Solutions, your trusted partner in construction estimating and takeoff services across the USA, Canada, and Australia. We specialize in providing accurate estimates quickly, helping contractors, subcontractors, and suppliers increase their chances of winning profitable projects.
 
               Our dedicated team of estimators is experienced in managing over 300 projects annually with precision and efficiency.</p>
 
             <a href="./html/about.html" class="btn btn-primary mt-4">Read More</a>
           </div>
-          <div class="col-lg-6 py-3">
-            <div class="about-img">
-              <img src="./img/about.jpg" alt="">
-            </div>
-          </div>
+          
         </div>
       </div>
     </div> <!-- .page-section -->
-
-
-    <div class="page-section">
+    
+<div class="page-section">
       <div class="container">
         <div class="text-center">
           <div class="subhead">Our Services</div>
@@ -231,9 +234,15 @@
               <h5>Siding takeoff</h5>
             </div>
           </div>
+
+          
+         
           <a href="./html/services.html" class="btn btn-primary mt-4">See More</a>
         </div>
+        
+        
       </div> <!-- .container -->
+      
     </div> <!-- .page-section -->
 
 
@@ -247,38 +256,38 @@
         <div class="row justify-content-center">
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span> COST-EFFECTIVENESS</h5>
+              <div class="subheading-box">• COST-EFFECTIVENESS</div>
               <p>Minimize unnecessary material purchases, optimize resources, and maximize budget efficiency.</p>
             </div>
           </div>
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span>ACCURACY ENHANCEMENT</h5>
+              <div class="subheading-box">• ACCURACY ENHANCEMENT</div>
               <p>Enhance precision in quantity assessments, ensuring more reliable project bids and material predictions.</p>
             </div>
           </div>
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span> OPERATIONAL EFFICIENCY</h5>
+              <div class="subheading-box">• OPERATIONAL EFFICIENCY</div>
               <p>Streamline material availability and procurement processes, mitigating potential project delays.</p>
             </div>
           </div>
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span> TIME EFFICIENCY</h5>
+              <div class="subheading-box">• TIME EFFICIENCY</div>
               <p>Expedite material needs assessment, reducing time spent on manual calculations.</p>
             </div>
           </div>
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span>STRATEGIC PLANNING</h5>
+              <div class="subheading-box">• STRATEGIC PLANNING</div>
               <p> Improve budget planning and management, preempting unforeseen expenses and project setbacks.
               </p>
             </div>
           </div>
           <div class="col-md-4 py-3">
             <div class="text-center">
-              <h5><span class="tick-icon">✔️</span>RISK MITIGATION</h5>
+              <div class="subheading-box">• RISK MITIGATION</div>
               <p>Reduce inaccuracies and mistakes inherent in in-house estimation processes, ensuring smoother project execution.</p>
             </div>
           </div>
@@ -287,64 +296,7 @@
     </div>
     
 
-    <div class="page-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 py-3">
-            <div class="subhead">Portfolio</div>
-            <h2 class="title-section">Our Latest Projects</h2>
-          </div>
-          <div class="col-md-6 py-3 text-md-right">
-            <a href="./html/portfolio.html" class="btn btn-outline-primary">Browse Projects <span class="mai-arrow-forward ml-2"></span></a>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-1.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-1.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-2.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-2.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-3.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-3.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-4.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-4.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-5.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-5.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4 py-3">
-            <div class="portfolio">
-              <a href="./img/portfolio/work-6.jpg" data-fancybox="portfolio">
-                <img src="./img/portfolio/work-6.jpg" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
+    
 
     
 
@@ -361,15 +313,6 @@
         </div>
         <div class="col-lg-3 py-3">
           <h5>Contact Information</h5>
-          <p><strong>Address:</strong> 5905 Atlanta Highway
-            Suite 101<br>
-            
-            Alpharetta, GA 30004<br>
-            
-            United States<br>
-            
-            Indian Address-  2nd Floor, 204/205, Paradigm Tower, B Wing, Off Link Road, Mindspace, Malad West, Mumbai - 400064
-            .</p>
           <p><strong>Email:</strong> info@buildnestsolutions.com</p>
           <p><strong>Phone:</strong> +1 229 509 9316</p>
         </div>
@@ -399,16 +342,9 @@
 
       <div class="row mt-4">
         <div class="col-md-6">
-          <p>Copyright 2020. This template designed by <a href="https://macodeid.com">MACode ID</a></p>
+          <p>© Build nest solutions. All Rights Reserved.</p>
         </div>
-        <div class="col-md-6 text-right">
-          <div class="sosmed-button">
-            <a href="#"><span class="mai-logo-facebook-f"></span></a>
-            <a href="#"><span class="mai-logo-twitter"></span></a>
-            <a href="#"><span class="mai-logo-youtube"></span></a>
-            <a href="#"><span class="mai-logo-linkedin"></span></a>
-          </div>
-        </div>
+       
       </div>
     </div>
   </footer>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -1270,6 +1272,9 @@ a.fg-light:hover, a.fg-light:focus {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(109, 114, 139, 0.75);
 }
+.nav-item{
+font-size: larger;
+}
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #6D728B;
@@ -2399,3 +2404,62 @@ a.fg-light:hover, a.fg-light:focus {
   background-color: #2F89FC;
 }
 /*# sourceMappingURL=theme.css.map */
+
+/* .company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F89FC !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Left: Logo */
+.logo {
+  flex: 0 0 auto; /* Prevent the logo from shrinking */
+}
+
+/* Center: Company Name */
+.company-name-container {
+  flex: 1; /* Take remaining space to center-align the name */
+  display: flex;
+  justify-content: center; /* Ensure the name is centered */
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F89FC !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+
+/* Right: Navigation Links */
+.navbar-collapse {
+  flex: 0 0 auto; /* Prevent links from shrinking */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px; /* Space between menu items */
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
