@@ -38,45 +38,69 @@
   display: inline-block;
 }
 
+/* Carousel Container */
+/* Carousel Container */
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual Carousel Items */
 .page-banner .hero-carousel-item {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ensures the carousel covers the full viewport height */
-  overflow: hidden; /* Prevents any overflow from the images */
+  height: 100%; /* Ensures the item fills the parent container */
+  overflow: hidden; /* Prevents overflow */
+  display: flex; /* Aligns the content to fill the space */
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
 }
 
+/* Images in the Carousel */
 .page-banner .hero-carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire carousel without distortion */
-  object-position: center; /* Centers the image within the carousel */
+  object-fit: cover; /* Ensures the image fully covers the container without distortion */
+  object-position: center; /* Centers the image within the container */
+  display: block; /* Prevents inline-block spacing issues */
 }
 
+
+/* Caption Styling */
 .page-banner .img-caption {
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 60%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   max-width: 90%; /* Prevents text overflow */
+  z-index: 10; /* Ensures the caption is above the image */
 }
 
+/* Headings Inside the Carousel */
 .page-banner h1 {
   font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
   .page-banner h1 {
     font-size: 1.5rem;
   }
 
+  
+
   .img-caption {
     max-width: 95%;
+    object-fit: cover;
   }
 }
 
@@ -85,6 +109,12 @@
     font-size: 1.2rem;
   }
 }
+
+/* Add margin below the banner to ensure separation with the next section */
+.page-banner + div {
+  margin-top: 20px; /* Adjust as needed */
+}
+
 
 
 
@@ -156,7 +186,7 @@
             </div>
           </div>
           <div class="hero-carousel-item">
-            <img src="./img/architect_img_2.jpeg" alt="">
+            <img src="./img/resized-image-Promo (5).jpeg" alt="" >
             <div class="img-caption">
               <h1 class="mb-4">Unlock more bidding opportunities with our professional quantity take off and estimating services</h1>
               <!-- <a href="#services" class="btn btn-outline-light">Get Started</a> -->
