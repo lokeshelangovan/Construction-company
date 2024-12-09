@@ -40,12 +40,16 @@
 
 .page-banner .hero-carousel-item {
   position: relative;
+  width: 100%;
+  height: 100vh; /* Ensures the carousel covers the full viewport height */
+  overflow: hidden; /* Prevents any overflow from the images */
 }
 
 .page-banner .hero-carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image covers the entire carousel without distortion */
+  object-position: center; /* Centers the image within the carousel */
 }
 
 .page-banner .img-caption {
@@ -56,7 +60,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  max-width: 90%; /* Keeps text from overflowing */
+  max-width: 90%; /* Prevents text overflow */
 }
 
 .page-banner h1 {
@@ -72,7 +76,7 @@
   }
 
   .img-caption {
-    padding: 0 10px; /* Adds some padding for better appearance */
+    max-width: 95%;
   }
 }
 
@@ -81,6 +85,7 @@
     font-size: 1.2rem;
   }
 }
+
 
 
   </style>
